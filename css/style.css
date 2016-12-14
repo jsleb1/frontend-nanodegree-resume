@@ -33,7 +33,7 @@ h1 {
   font-size: 40px;
   color: #f5a623;
   line-height: 48px;
-  display: inline;
+
 }
 
 h2 {
@@ -66,7 +66,6 @@ h5 {
 
 }
 
-
 .date-text {
   font-style: italic;
   font-size: 14px;
@@ -80,8 +79,6 @@ h5 {
   font-size: 14px;
   color: #999;
   line-height: 16px;
-  float: right;
-
 }
 
 p {
@@ -98,21 +95,34 @@ a {
 }
 
 #topContacts {
-  float: right;
+  float: left;
   text-decoration: none;
-
+  width: 100%;
 }
 
 .welcome-message {
   font-style: italic;
-  font-size: 18px;
+  font-size: 16px;
   color: #f3f3f3;
-  line-height: 28px;
+  line-height: 24px;
+  margin-top: 5%;
+  width: 100%;
 }
 
 #skills-h3 {
   color: #f5ae23;
-  display: none;
+  margin-bottom: 0;
+}
+
+#skills {
+  display: block;
+  width: 100%;
+  margin-top: 0;
+}
+
+.list {
+  display: flex;
+  width: 100%;
 }
 
 .orange {
@@ -152,11 +162,37 @@ a {
   padding: 10px;
 }
 
+.headerName {
+  display: block;
+  float: left;
+  margin: 0 3% 0 0;
+  padding: 0;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.role {
+  display: block;
+  color: white;
+  font-size: 1.5em;
+  text-align: left;
+  margin: 0;
+}
+
 .flex-column {
   display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding: 10px;
+  width: 76%;
+  margin: auto;
+}
+
+.flex-item {
+  display: inline;
+  padding: 0;
+  margin: auto;
+
 }
 
 .center-content {
@@ -168,10 +204,10 @@ ul {
 }
 
 .biopic {
+  display: block;
   float: left;
   padding: 10px;
   width: 200px;
-  display: none;
 }
 
 img {
@@ -181,6 +217,7 @@ img {
 span {
   padding: 5px;
 }
+
 
 #lets-connect {
   text-align: center;
@@ -206,9 +243,25 @@ span {
   }
   .biopic {
     width: 150px;
+    margin: auto;
   }
   .welcome-message {
     display: none;
+  }
+
+  #skills-h3 {
+    font-size: 1em;
+    margin: 9% auto 0;
+    padding-bottom: 0;
+  }
+
+  #skills {
+    display: block;
+    font-size: .8em;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+    line-height: 1.3em;
   }
 }
 
@@ -228,5 +281,71 @@ span {
   #skills-h3,
   .biopic {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  #skills-h3 {
+    font-size: 1.1em;
+    padding-bottom: 0;
+  }
+
+  #skills {
+    font-size: .9em
+  }
+
+  .list {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .contact {
+    font-size: .9em;
+  }
+
+  #skills-h3 {
+    font-size: .9em;
+    margin: 17% auto 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  #skills {
+    display: block;
+    font-size: .8em;
+    width: 40%;
+    float: right;
+    margin: auto;
+    padding: 0;
+    line-height: 1.3em;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  #name {
+    font-size: 2em;
+  }
+
+  #skills-h3 {
+    font-size: .8em;
+    margin: 23% auto 0;
+    padding-bottom: 0;
+    text-align: center;
+  }
+
+  #skills {
+    display: block;
+    font-size: .7em;
+    width: 40%;
+    float: right;
+    margin: auto;
+    padding: 0;
+    line-height: 1.3em;
+  }
+
+  .biopic {
+    width: 130px;
+    margin: auto;
   }
 }
