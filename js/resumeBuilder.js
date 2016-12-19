@@ -13,7 +13,7 @@ var bio = {
                             also challenging me and allowing me to expand my knowledge of various \
                             technologies.",
     "skills": ["HTML5", "CSS3/BootStrap", "JavaScript/JQuery", "Version-Control/GIT", "Communication", "Problem Solving"],
-    "biopic": "images/selfie.jpg"
+    "biopic": "images/selfie2.jpg"
 };
 
 bio.display = function() {
