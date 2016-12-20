@@ -16,6 +16,8 @@ var bio = {
     "biopic": "images/selfie2.jpg"
 };
 
+$(".download").prepend(downloadPDF);
+
 bio.display = function() {
     var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
     var formattedName = HTMLheaderName.replace("%data%", bio.name);

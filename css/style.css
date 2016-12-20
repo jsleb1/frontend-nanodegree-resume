@@ -167,19 +167,38 @@ a {
 
 .headerName {
     display: block;
-    float: left;
-    margin: 0 3% 0 0;
+    clear: left;
+    width: 80%;
+    margin: 0;
     padding: 0;
-    vertical-align: bottom;
-    width: 100%;
+}
+
+#nameRole {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+  margin: 0;
 }
 
 .role {
     display: block;
+    float: left;
+    clear: right;
     color: white;
     font-size: 1.5em;
-    text-align: left;
+    width: 80%;
     margin: 0;
+}
+
+#name {
+  float: left;
+}
+
+.download {
+  display: flex;
+  float: right;
+  margin: 0;
 }
 
 .flex-column {
